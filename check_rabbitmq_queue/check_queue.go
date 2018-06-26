@@ -24,10 +24,10 @@ var nagiousNotify ArrQueue
 func main() {
 
 	var (
-		host                       = flag.String("h", "192.168.16.7", "This is the host with rabbitmq")
+		host                       = flag.String("h", "127.0.0.1", "This is the host with rabbitmq")
 		port                       = flag.Int("p", 15672, "Rabbitmq is using this port")
 		user                       = flag.String("u", "admin", "This is the user for rabbitmq")
-		pass                       = flag.String("pw", "12345678", "This is the password for rabbitmq")
+		pass                       = flag.String("pw", "1234", "This is the password for rabbitmq")
 		nameQueue                  = flag.String("q", "celery, coverage_tasks", "This is the queue name")
 		errMessages                = flag.Int("em", 28, "Error messages in the queue of rabbitmq")
 		warnMessages               = flag.Int("wm", 15, "Warn messages in the queue of rabbitmq")
