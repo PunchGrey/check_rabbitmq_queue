@@ -1,5 +1,4 @@
-# check_rabbitmq_queue
-check_rabbitmq_queue
+nagios_check_plugins
 =====================
 
 Nagios плагины для мониторинга.
