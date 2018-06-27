@@ -50,7 +50,7 @@ check_rabbitmq_queue
     }
 
 На хосте testhost.local (откуда будет запускаться проверка)
+/usr/lib64/nagios/plugins/check_queue - бинарник должен быть на testhost.local
 в файле /etc/nrpe.d/check_queue.cfg
 
     command[check_queue_celery]=/usr/lib64/nagios/plugins/check_queue -h $ARG1$ -p $ARG2$ -u $ARG3$ -pw $ARG4$ -q $ARG5$ -em $ARG6$ -wm $ARG7$ -emu $ARG8$ -wmu $ARG9$
-    /usr/lib64/nagios/plugins/check_queue - бинарник должен быть на testhost.local
